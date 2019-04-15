@@ -9,9 +9,9 @@
     import './assets/jsoneditor.css'
     import JsonEditor from './assets/jsoneditor'
     export default {
-        props: [
-          'value', 
-          'showBtns', 
+        props: {
+          'value': [String, Object], 
+          'showBtns': [Boolean, String], 
           'mode': {
             default: 'code'
           }, 
@@ -21,7 +21,7 @@
           'lang': {
             default: 'zh'
           }
-        ],
+        },
         watch: {
             value: {
                 immediate: true,
