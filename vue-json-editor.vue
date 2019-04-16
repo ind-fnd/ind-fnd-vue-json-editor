@@ -16,7 +16,7 @@
             default: 'code'
           }, 
           'modes': {
-            default: ['tree', 'code', 'form', 'text', 'view']
+            default: function(){ return ['tree', 'code', 'form', 'text', 'view'] }
           }, 
           'lang': {
             default: 'zh'
